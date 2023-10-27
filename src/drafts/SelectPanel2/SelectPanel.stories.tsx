@@ -872,7 +872,7 @@ export const FInstantSelectionVariant = () => {
   )
 }
 
-export const TODO3WithValidation = () => {
+export const JWithWarning = () => {
   const initialSelectedLabels = data.issue.labelIds // mock initial state: has selected labels
   const [selectedLabelIds, setSelectedLabelIds] = React.useState<string[]>(initialSelectedLabels)
 
@@ -934,7 +934,7 @@ export const TODO3WithValidation = () => {
 
   return (
     <>
-      <h1>SelectPanel with validation</h1>
+      <h1>SelectPanel with warning</h1>
 
       <SelectPanel
         title="Select labels"
