@@ -1,5 +1,5 @@
 import React from 'react'
-import {SearchIcon, XCircleFillIcon, XIcon, FilterRemoveIcon} from '@primer/octicons-react'
+import {SearchIcon, XCircleFillIcon, XIcon, FilterRemoveIcon, AlertIcon} from '@primer/octicons-react'
 import {FocusKeys} from '@primer/behaviors'
 
 import {
@@ -331,6 +331,37 @@ const SelectPanelLoading: React.FC<{children: string}> = ({children = 'Fetching 
 }
 
 SelectPanel.Loading = SelectPanelLoading
+
+const SelectPanelWarning: React.FC<{children: React.ReactNode}> = ({children}) => {
+  return (
+    <Box
+      aria-live="polite"
+      sx={{
+        bg: 'attention.subtle',
+        py: '12px',
+        display: 'grid',
+        px: 3,
+        color: 'attention.fg',
+        gridTemplateColumns: `16px auto`,
+        gap: 2,
+        borderBottomColor: 'attention.muted',
+        borderBottomStyle: 'solid',
+        borderBottomWidth: 1,
+        borderTopWidth: 1,
+        borderTopStyle: 'solid',
+        borderTopColor: 'attention.muted',
+        fontSize: 0,
+      }}
+    >
+      <Box sx={{display: 'grid', pt: '1px'}}>
+        <AlertIcon size={16} />
+      </Box>
+      <Box>{children}</Box>
+    </Box>
+  )
+}
+
+SelectPanel.Warning = SelectPanelWarning
 
 const SelectPanelEmptyMessage: React.FC<{children: string | React.ReactNode}> = ({children = 'No items found...'}) => {
   return (

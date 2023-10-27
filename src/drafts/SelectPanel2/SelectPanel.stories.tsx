@@ -955,6 +955,12 @@ export const TODO3WithValidation = () => {
           <SelectPanel.SearchInput onChange={onSearchInputChange} />
         </SelectPanel.Header>
 
+        {selectedLabelIds.length >= MAX_LIMIT ? (
+          <SelectPanel.Warning>You&apos;ve reached the max selection of 5 assignees</SelectPanel.Warning>
+        ) : (
+          <></>
+        )}
+
         {itemsToShow.length === 0 ? (
           <SelectPanel.EmptyMessage>No labels found for &quot;{query}&quot;</SelectPanel.EmptyMessage>
         ) : (
