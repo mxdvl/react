@@ -1,5 +1,25 @@
 # @primer/components
 
+## 36.3.0
+
+### Minor Changes
+
+- [#3484](https://github.com/primer/react/pull/3484) [`e4037895`](https://github.com/primer/react/commit/e4037895105c7e86e79c5bb6fbafb86e715337ba) Thanks [@ValbertMartins](https://github.com/ValbertMartins)! - TextArea: Add contrast property
+
+### Patch Changes
+
+- [#3897](https://github.com/primer/react/pull/3897) [`6b0c118b`](https://github.com/primer/react/commit/6b0c118b34e97c558991ebdc17a13350296245a8) Thanks [@mperrotti](https://github.com/mperrotti)! - When passing an `id` prop to ActionMenu.Button, it will be passed as the rendered button element's `id` attribute instead of being set as an automatically generated ID.
+
+  <!-- Changed components: ActionMenu -->
+
+- [#3960](https://github.com/primer/react/pull/3960) [`ec8a2cad`](https://github.com/primer/react/commit/ec8a2cadda01a3a3463380b911922b9c28e4e241) Thanks [@pksjce](https://github.com/pksjce)! - Update to @primer/behaviors v1.5.1
+
+- [#3945](https://github.com/primer/react/pull/3945) [`40b29787`](https://github.com/primer/react/commit/40b29787ec4c8f709e7522147e58bd03e51b28e7) Thanks [@siddharthkp](https://github.com/siddharthkp)! - ActionList: Fix bug that did not allow both inline and block description at the same time
+
+- [#3903](https://github.com/primer/react/pull/3903) [`f62ec728`](https://github.com/primer/react/commit/f62ec728acd5c90f105c3e3c5162a69dbe0c4b6d) Thanks [@pksjce](https://github.com/pksjce)! - Make resize vertical splitter keyboard accessible
+
+- [#3946](https://github.com/primer/react/pull/3946) [`e08432d5`](https://github.com/primer/react/commit/e08432d54dd45a5e793719509dc78657570dde0b) Thanks [@siddharthkp](https://github.com/siddharthkp)! - Link: Add `inline` prop to tag links inside a text block, underlined with accessibility setting `[data-a11y-link-underlines]`
+
 ## 36.2.0
 
 ### Minor Changes
